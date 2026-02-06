@@ -1,6 +1,6 @@
 import { colors } from "./src/util/Colors";
 import { Input } from "./src/util/Input";
-
+import { Produto } from "./src/model/Produto";
 
 
 export function main(){
