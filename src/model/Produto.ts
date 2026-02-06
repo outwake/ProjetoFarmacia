@@ -1,29 +1,29 @@
 
 
-export class Produto{
+export abstract class Produto{
 
-    private _id: number;
-    private _nome: string;
+    private _produtoId: number;
+    private _nomeProduto: string;
     private _tipo: number;
     private _preco: number;
 
 
-	constructor(id: number, nome: string, tipo: number, preco: number) {
-		this._id = id;
-		this._nome = nome;
+	constructor(produtoId: number, nomeProduto: string, tipo: number, preco: number) {
+		this._produtoId = produtoId;
+		this._nomeProduto = nomeProduto;
 		this._tipo = tipo;
 		this._preco = preco;
 	}
 
 
     //Método GET
-	public get id(): number {
-		return this._id;
+	public get produtoId(): number {
+		return this._produtoId;
 	}
 
    
-	public get nome(): string {
-		return this._nome;
+	public get nomeProduto(): string {
+		return this._nomeProduto;
 	}
 
  
@@ -39,13 +39,13 @@ export class Produto{
 
 
     //Método SET
-	public set id(value: number) {
-		this._id = value;
+	public set produtoId(value: number) {
+		this._produtoId = value;
 	}
 
 
-	public set nome(value: string) {
-		this._nome = value;
+	public set nomeProduto(value: string) {
+		this._nomeProduto = value;
 	}
 
 	public set tipo(value: number) {
@@ -80,9 +80,8 @@ export class Produto{
         console.log("\n====================================")
         console.log("||          DADOS DA CONTA         ||")
         console.log("====================================")
-        console.log(`Numero do Produto: ${this._id}`);
-        console.log(`Nome do Produto: ${this._nome}`);
-        console.log(`Tipo de Produto: ${tipo}`);
+        console.log(`Numero do Produto: ${this._produtoId}`);
+        console.log(`Nome do Produto: ${this._nomeProduto}`);
         console.log(`Preço do Produto: R$ ${this._preco}`);
 
     }
