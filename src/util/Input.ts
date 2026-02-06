@@ -145,6 +145,12 @@ export class Input {
  
         return readlinesync.keyInSelect(opcoes, pergunta, config);
     }
+
+     //static keyInYN(opcoes: boolean[], pergunta: boolean, config?: any): boolean {
+       // const readlinesync = require('readline-sync');
+ 
+       // return readlinesync.keyInYN(opcoes, pergunta, config);
+   // }
  
     /**
      * Pausa e aguarda o usuário pressionar ENTER
